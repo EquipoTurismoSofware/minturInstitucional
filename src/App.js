@@ -1,4 +1,6 @@
-import { Switch, Route, Redirect } from 'react-router-dom';
+import { HashRouter as Router, Route, Switch } from "react-router-dom";
+import React from "react";
+import { Provider } from "./context";
 import Landing from 'pages/Landing';
 import Profile from 'pages/Profile';
 import Login from 'pages/Login';
@@ -12,13 +14,18 @@ import 'assets/styles/tailwind.css';
 
 function App() {
     return (
-        <Switch>
-            <Route exact path="/" component={Landing} />
-            <Route exact path="/profile" component={Profile} />
-            <Route exact path="/login" component={Login} />
-            <Route exact path="/register" component={Register} />
-            <Redirect from="*" to="/" />
-        </Switch>
+         <Provider>
+            <Router history={Router.hashHistory}>
+                <React.Fragment>
+                    <Switch>
+                        <Route exact path="/" component={Landing} />
+                        <Route exact path="/profile" component={Profile} />
+                        <Route exact path="/login" component={Login} />
+                        <Route exact path="/register" component={Register} />
+                    </Switch>
+                </React.Fragment>
+            </Router>
+          </Provider>
     );
 }
 
