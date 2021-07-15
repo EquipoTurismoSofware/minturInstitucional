@@ -4,7 +4,9 @@ import { Provider } from "./context";
 import Landing from 'pages/Landing';
 import Profile from 'pages/Profile';
 import Login from 'pages/Login';
+import DefaultNavbar from "components/DefaultNavbar"; 
 import Register from 'pages/Register';
+import PListadoEstadisticas from "pages/Estadisticas/PListadoEstadisticas";
 
 // Font Awesome Style Sheet
 import '@fortawesome/fontawesome-free/css/all.min.css';
@@ -19,6 +21,7 @@ function App() {
                 <React.Fragment>
                     <Switch>
                         <Route exact path="/" component={Landing} />
+                        <Route exact path="/estadisticas" component={PListadoEstadisticas} />
                         <Route exact path="/profile" component={Profile} />
                         <Route exact path="/login" component={Login} />
                         <Route exact path="/register" component={Register} />

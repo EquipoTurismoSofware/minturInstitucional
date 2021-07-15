@@ -1,3 +1,70 @@
+@charset "UTF-8";
+.main-chart-wrapper .estadisticas-leyenda span {
+  margin: 10px 0 10px 20px;
+  font-size: 2em;
+  padding: 2px 15px;
+  background-color: #722789;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.est-main {
+  padding-top: 100px;
+  margin: 0 20px 0 20px;
+}
+.est-main .est-titulo {
+  background-color: #722789;
+  display: block;
+  width: 100%;
+  top: 10px;
+  height: 50px;
+  position: relative;
+  margin-bottom: 60px;
+}
+.est-main .est-titulo h3 {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background-color: #fff;
+  text-transform: uppercase;
+  padding: 8px;
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+.sub-chart-wrapper {
+  padding: 2%;
+  display: inline-block;
+  width: 50%;
+  height: 300px;
+  margin-bottom: 100px;
+  text-align: center;
+}
+.sub-chart-wrapper .sub-chart-wrapper-titulo {
+  font-size: 1.3em;
+  padding: 2px 15px;
+  background-color: #ed0f68;
+  color: #fff;
+  text-transform: uppercase;
+}
+.sub-chart-wrapper .sub-chart-wrapper-subtitulo {
+  font-size: 1.3em;
+  padding: 2px 15px;
+  margin-bottom: 15px;
+  background-color: #ed0f68;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+/* Simple responsivenss example */
+@media (max-width: 700px) {
+  .sub-chart-wrapper {
+    width: 96%;
+  }
+}
+/*
+    Configuración General
+*/
 .App {
   text-align: center;
 }
@@ -12,7 +79,6 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -36,3 +102,5 @@
     transform: rotate(360deg);
   }
 }
+
+/*# sourceMappingURL=App.css.map */

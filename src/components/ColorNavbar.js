@@ -13,20 +13,19 @@ import DropdownItem from '@material-tailwind/react/DropdownItem';
 import Icon from '@material-tailwind/react/Icon';
 import Button from '@material-tailwind/react/Button';
 
-export default function DefaultNavbar() {
+export default function ColorNavbar() {
     const [openNavbar, setOpenNavbar] = useState(false);
 
     return (
-        <Navbar color="transparent" navbar>
+        <Navbar color="lightBlue" navbar>
             <NavbarContainer>
                 <NavbarWrapper>
-                    <a
-                        href="https://material-tailwind.com?ref=mtk"
-                        target="_blank"
+                    <Link
+                        to="/"
                         rel="noreferrer"
                     >
                         <NavbarBrand>Institucional</NavbarBrand>
-                    </a>
+                    </Link>
                     <NavbarToggler
                         onClick={() => setOpenNavbar(!openNavbar)}
                         color="white"
