@@ -64,7 +64,7 @@ const PListadoEstadisticas = () => {
     });
       return (
           <React.Fragment>
-              <ColorNavbar />
+              {/*<ColorNavbar />*/}
             <div className="est-main" >
             <div
                 className="ZonaDetalle-titulo"

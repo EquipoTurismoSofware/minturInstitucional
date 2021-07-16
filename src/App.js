@@ -1,4 +1,5 @@
 import { HashRouter as Router, Route, Switch } from "react-router-dom";
+import "./App.css";
 import React from "react";
 import { Provider } from "./context";
 import Landing from 'pages/Landing';

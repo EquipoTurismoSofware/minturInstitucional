@@ -39,8 +39,7 @@ const Estadistica = (props) => {
         .then((response) => {
             if(response.data.data.registros.length > 0) {
                 setData(response.data.data.registros);
-                console.log(response.data.data.registros)
-                data.forEach(element => {
+                response.data.data.registros.forEach(element => {
                     data1.push({
                         title: element.tipoNombre,
                         data: element.valores
@@ -53,34 +52,31 @@ const Estadistica = (props) => {
         .catch((error) => {
             console.log(error);
         });
+    }
+
+    useEffect(() => {     
+      document.body.scrollTop = 0; // Safari
+      document.documentElement.scrollTop = 0; // Chrome, Firefox, IE y Opera
+      setId(idEst)
+      setFlag(updateOnOpen)
+
+      if(updateOnOpen == idEst){
+          getData(0);
       }
-        
+    }, [idEst, updateOnOpen])
+
     useEffect(() => {
         document.body.scrollTop = 0; // Safari
         document.documentElement.scrollTop = 0; // Chrome, Firefox, IE y Opera
         setId(idEst)
         setFlag(updateOnOpen)
-
         if(updateOnOpen){
-            getData();
+            getData(0);
         }
     }, [])
 
-    useEffect(() => {
-        document.body.scrollTop = 0; // Safari
-        document.documentElement.scrollTop = 0; // Chrome, Firefox, IE y Opera
-        setId(idEst)
-        setFlag(updateOnOpen)
-
-        if(updateOnOpen == idEst){
-            getData(0);
-        }
-    }, [idEst, updateOnOpen])
-
     var pos = -1;
-
     const graph = data.map((element) => {
-        console.log(element)
     pos++;
     var año = element.fechaDesde.toString().substring(0, 4)
     var fechDesde = element.fechaDesde.toString().substring(8, 10);
@@ -127,4 +123,3 @@ const Estadistica = (props) => {
   Estadistica.contextType = Consumer;
 
   export default Estadistica;
-

@@ -62,6 +62,24 @@
     width: 96%;
   }
 }
+.ZonaDetalle-titulo {
+  display: block;
+  width: 100%;
+  height: 50px;
+  position: relative;
+  top: 10px;
+  margin-bottom: 40px;
+}
+.ZonaDetalle-titulo h3 {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background-color: #fff;
+  text-transform: uppercase;
+  padding: 8px;
+  font-weight: bold;
+}
+
 /*
     Configuración General
 */
