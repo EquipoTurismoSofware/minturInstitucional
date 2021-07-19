@@ -1,0 +1,43 @@
+.visor {
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    width: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.visor .visor-content {
+    width: 90%;
+    height: 90%;
+    position: relative;
+}
+.visor .visor-content .visor-close {
+    position: absolute;
+    right: -25px;
+    top: -25px;
+    z-index: 1000;
+}
+.visor .visor-content .visor-close i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: white;
+    color: black;
+}
+.visor .visor-content img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: scale-down;
+    border: 1px solid #fff;
+}

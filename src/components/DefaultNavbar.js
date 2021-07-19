@@ -17,16 +17,10 @@ export default function DefaultNavbar() {
     const [openNavbar, setOpenNavbar] = useState(false);
 
     return (
-        <Navbar color="transparent" navbar>
+        <Navbar color="deepPurple" navbar>
             <NavbarContainer>
-                <NavbarWrapper>
-                    <a
-                        href="https://material-tailwind.com?ref=mtk"
-                        target="_blank"
-                        rel="noreferrer"
-                    >
-                        <NavbarBrand>Institucional</NavbarBrand>
-                    </a>
+                <NavbarWrapper>                
+                    <NavbarBrand>Institucional</NavbarBrand>                  
                     <NavbarToggler
                         onClick={() => setOpenNavbar(!openNavbar)}
                         color="white"
@@ -36,6 +30,13 @@ export default function DefaultNavbar() {
                 <NavbarCollapse open={openNavbar}>
                     <Nav>
                         <div className="flex flex-col z-50 lg:flex-row lg:items-center">
+                            <NavLink
+                                href={`${process.env.REACT_APP_URL}/`}
+                                rel="noreferrer"
+                                ripple="light"
+                            >
+                                <Icon name="house" size="2xl" />
+                            </NavLink>
                             <NavLink
                                 href={`${process.env.REACT_APP_URL}/estadisticas`}
                                 rel="noreferrer"
@@ -53,7 +54,7 @@ export default function DefaultNavbar() {
                                 &nbsp;Contacto
                             </NavLink>
                             <NavLink
-                                href="https://material-tailwind.com/components?ref=mtk"
+                                href={`${process.env.REACT_APP_URL}/novedades`}
                                 rel="noreferrer"
                                 ripple="light"
                             >
@@ -79,17 +80,17 @@ export default function DefaultNavbar() {
                                     }
                                     ripple="light"
                                 >
-                                    <Link to="/">
+                                    <Link to="/" style={{textDecoration:"none"}}>
                                         <DropdownItem color="lightBlue">
                                             Registro ACTIVIDAD PROFESIONAL GUÍAS DE TURISMO 
                                         </DropdownItem>
                                     </Link>
-                                    <Link to="/profile">
+                                    <Link to="/profile" style={{textDecoration:"none"}}>
                                         <DropdownItem color="lightBlue">
                                             Registro EXCURSIONES Y TOURS DE AGENCIAS DE VIAJES
                                         </DropdownItem>
                                     </Link>
-                                    <Link to="/login">
+                                    <Link to="/login" style={{textDecoration:"none"}}>
                                         <DropdownItem color="lightBlue">
                                             Registro para alojamientos
                                         </DropdownItem>

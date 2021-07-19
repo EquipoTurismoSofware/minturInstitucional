@@ -1,9 +1,7 @@
-import React, { useEffect, useState, useRef, useContext } from "react";
+import React, { useEffect, useState} from "react";
 import { Consumer } from "../../context";
 import axios from "axios";
-import { Link } from "react-router-dom";
 import Estadistica from "../../components/stats/Estadistica";
-import ColorNavbar from "components/ColorNavbar";
 
 const PListadoEstadisticas = () => {
     const [data, setData] = useState([]);
@@ -64,11 +62,10 @@ const PListadoEstadisticas = () => {
     });
       return (
           <React.Fragment>
-              {/*<ColorNavbar />*/}
             <div className="est-main" >
             <div
                 className="ZonaDetalle-titulo"
-                style={{ paddingTop: "50px", backgroundColor: `#722789` }}
+                style={{backgroundColor: `#722789` }}
               >
                 <h3 style={{ color: `#722789` }}>
                   LISTADO DE ESTADÍSTICAS

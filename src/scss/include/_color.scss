@@ -4,3 +4,19 @@
 
 $color-uno: rgba(114,39,137, 1); //#722789 //hsla(286, 56%, 35%, 1)
 $color-dos: rgba(237,15,104, 1); //#ed0f68 //hsla(336, 88%, 49%, 1)
+
+@mixin degrado($opacity-start, $opacity-end) {
+    background: rgb(114,39,137);
+    background: -moz-linear-gradient(left, rgba(114,39,137,$opacity-start) 0%, rgba(237,15,104,$opacity-end) 100%);
+    background: -webkit-linear-gradient(left, rgba(114,39,137,$opacity-start) 0%,rgba(237,15,104,$opacity-end) 100%);
+    background: linear-gradient(to right, rgba(114,39,137,$opacity-start) 0%,rgba(237,15,104,$opacity-end) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#722789', endColorstr='#ed0f68',GradientType=1 );
+}
+
+@mixin degrado2($opacity-start, $opacity-end) {
+    background: rgb(245,183,25);
+    background: -moz-linear-gradient(left, rgba(245,183,25,$opacity-start) 0%, rgba(223,24,100,$opacity-end) 100%);
+    background: -webkit-linear-gradient(left, rgba(245,183,25,$opacity-start) 0%,rgba(223,24,100,$opacity-end) 100%);
+    background: linear-gradient(to right, rgba(245,183,25,$opacity-start) 0%,rgba(223,24,100,$opacity-end) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#F5B619', endColorstr='#DF1864',GradientType=1 );
+}

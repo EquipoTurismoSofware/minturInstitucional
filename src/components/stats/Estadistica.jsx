@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useRef } from "react";
-import Graficos from "../../components/stats/Graficos"
+import Graficos from "./Graficos"
 import { Consumer } from "../../context";
 import axios from "axios";
 

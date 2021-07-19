@@ -4,13 +4,12 @@ import Header from 'components/landing/Header';
 import WorkingSection from 'components/landing/WorkingSection';
 import TeamSection from 'components/landing/TeamSection';
 import ContactSection from 'components/landing/ContactSection';
+import React from 'react';
 
 export default function Landing() {
     return (
-        <>
-            <div className="absolute w-full z-20">
-                <DefaultNavbar />
-            </div>
+        <React.Fragment>
+            
             <main>
                 <Header />
                 <WorkingSection />
@@ -18,6 +17,6 @@ export default function Landing() {
                 <ContactSection />
             </main>
             <DefaultFooter />
-        </>
+        </ React.Fragment>
     );
 }
