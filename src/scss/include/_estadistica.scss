@@ -1,5 +1,5 @@
 $color-uno: rgba(114,39,137, 1); //#722789 //hsla(286, 56%, 35%, 1)
-$color-dos: rgba(237,15,104, 1); //#ed0f68 //hsla(336, 88%, 49%, 1)
+$color-dos: #ed0f68; //#ed0f68 //hsla(336, 88%, 49%, 1)
 
 .main-chart-wrapper {
     .estadisticas-leyenda{
@@ -48,7 +48,7 @@ $color-dos: rgba(237,15,104, 1); //#ed0f68 //hsla(336, 88%, 49%, 1)
    text-align: center; 
    .sub-chart-wrapper-titulo
    {     
-     font-size: 1.3em;
+     font-size: 1.1em;
      padding: 2px 15px;
      background-color: $color-dos;
      color: #fff;
@@ -56,7 +56,7 @@ $color-dos: rgba(237,15,104, 1); //#ed0f68 //hsla(336, 88%, 49%, 1)
    }
    .sub-chart-wrapper-subtitulo
    {
-     font-size: 1.3em;
+     font-size: 1.1em;
      padding: 2px 15px;
      margin-bottom: 15px;
      background-color: $color-dos;

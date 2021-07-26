@@ -3,7 +3,6 @@ import "./App.css";
 import React from "react";
 import { Provider } from "./context";
 import Landing from 'pages/Landing';
-import Profile from 'pages/Profile';
 import Login from 'pages/Login';
 import DefaultNavbar from "components/DefaultNavbar"; 
 import Register from 'pages/Register';
@@ -16,6 +15,9 @@ import 'assets/styles/tailwind.css';
 import PNovedades from "pages/Novedades/PNovedades";
 import PNovedad from "pages/Novedades/PNovedad";
 import PListadoEstadisticas from "pages/Estadisticas/PListadoEstadisticas";
+import PContacto from "pages/Contacto/PContacto";
+import PRegistroGuiasTurismo from "pages/Registros/PRegistroGuiasTurismo"
+import PRegistroAgenciasDeViajes from "pages/Registros/PRegistroAgenciasDeViajes"
 
 function App() {
     return (
@@ -28,6 +30,9 @@ function App() {
                     <Switch>
                         <Route exact path="/" component={Landing} />
                         <Route exact path="/estadisticas" component={PListadoEstadisticas} />
+                        <Route exact path="/contacto" component={PContacto} />
+                        <Route exact path="/registro-guias" component={PRegistroGuiasTurismo} />
+                        <Route exact path="/registro-agencias" component={PRegistroAgenciasDeViajes} />
                         <Route exact path="/novedades" component={PNovedades} />
                         <Route exact path="/novedad/:id" component={PNovedad} />
                         <Route exact path="/login" component={Login} />

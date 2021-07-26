@@ -36,7 +36,7 @@ const PListadoEstadisticas = () => {
       }, []);
     
       const graph = data.map((element) => {
-        var color = "#bf3276"
+        var color = "#be6a93"
         return(
             <div>
                  <div className="card" style={{borderColor:"#fff"}}>

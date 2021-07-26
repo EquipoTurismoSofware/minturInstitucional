@@ -42,14 +42,14 @@
   text-align: center;
 }
 .sub-chart-wrapper .sub-chart-wrapper-titulo {
-  font-size: 1.3em;
+  font-size: 1.1em;
   padding: 2px 15px;
   background-color: #ed0f68;
   color: #fff;
   text-transform: uppercase;
 }
 .sub-chart-wrapper .sub-chart-wrapper-subtitulo {
-  font-size: 1.3em;
+  font-size: 1.1em;
   padding: 2px 15px;
   margin-bottom: 15px;
   background-color: #ed0f68;
@@ -723,6 +723,98 @@
   height: 100%;
   object-fit: scale-down;
   border: 1px solid #fff;
+}
+
+/*
+    Componente PContacto.js
+*/
+.grillaContacto-grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: ". ." ". .";
+}
+
+.datos-grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "icono titulo" "icono dato";
+  color: #722789;
+}
+
+.contacLlamada {
+  color: #722789;
+  padding-top: 10px;
+}
+.contacLlamada i {
+  font-size: 50px;
+  padding-top: 10px;
+  position: absolute;
+}
+.contacLlamada h4 {
+  padding-left: 70px;
+}
+.contacLlamada h5 a {
+  color: #5C7080;
+  line-height: 1.9rem;
+  font-weight: 600;
+}
+
+.contacRedes {
+  color: #722789;
+  padding-left: 150px;
+  padding-top: 10px;
+}
+.contacRedes i {
+  font-size: 40px;
+  position: absolute;
+}
+.contacRedes h4 {
+  padding-left: 70px;
+}
+.contacRedes h5 a {
+  color: #5C7080;
+  line-height: 1.9rem;
+  font-weight: 600;
+  padding-left: 50px;
+  padding-top: 50px;
+}
+.contacRedes .iconRedes i {
+  font-size: 30px;
+}
+
+.posicionContacto {
+  padding-left: 150px;
+}
+
+@media only screen and (max-width: 880px) {
+  .grillaContacto-grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "." "." "." ".";
+  }
+
+  .posicionContacto {
+    padding-left: 0px;
+  }
+}
+/*
+    Componente Descarga App
+*/
+.registro1 {
+  display: none;
+}
+
+@media only screen and (max-width: 890px) {
+  .registro1 {
+    display: inline;
+  }
+
+  .registro2 {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=App.css.map */

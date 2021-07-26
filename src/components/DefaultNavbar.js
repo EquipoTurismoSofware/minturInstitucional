@@ -17,7 +17,7 @@ export default function DefaultNavbar() {
     const [openNavbar, setOpenNavbar] = useState(false);
 
     return (
-        <Navbar color="deepPurple" navbar>
+        <Navbar color="blueGray" navbar>
             <NavbarContainer>
                 <NavbarWrapper>                
                     <NavbarBrand>Institucional</NavbarBrand>                  
@@ -46,7 +46,7 @@ export default function DefaultNavbar() {
                                 &nbsp;Estadisticas
                             </NavLink>
                             <NavLink
-                                href="https://material-tailwind.com/documentation/quick-start?ref=mtk"
+                                href={`${process.env.REACT_APP_URL}/contacto`}
                                 rel="noreferrer"
                                 ripple="light"
                             >
@@ -80,21 +80,21 @@ export default function DefaultNavbar() {
                                     }
                                     ripple="light"
                                 >
-                                    <Link to="/" style={{textDecoration:"none"}}>
+                                    <Link to="/registro-guias" style={{textDecoration:"none"}}>
                                         <DropdownItem color="lightBlue">
                                             Registro ACTIVIDAD PROFESIONAL GUÍAS DE TURISMO 
                                         </DropdownItem>
                                     </Link>
-                                    <Link to="/profile" style={{textDecoration:"none"}}>
+                                    <Link to="/registro-agencias" style={{textDecoration:"none"}}>
                                         <DropdownItem color="lightBlue">
                                             Registro EXCURSIONES Y TOURS DE AGENCIAS DE VIAJES
                                         </DropdownItem>
                                     </Link>
-                                    <Link to="/login" style={{textDecoration:"none"}}>
+                                    <a href="http://protocoloturismo.sanluis.gov.ar/" style={{textDecoration:"none"}}>
                                         <DropdownItem color="lightBlue">
                                             Registro para alojamientos
                                         </DropdownItem>
-                                    </Link>
+                                    </a>
                                 </Dropdown>
                             </div>
                         </div>

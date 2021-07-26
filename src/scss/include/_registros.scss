@@ -1,0 +1,16 @@
+/*
+    Componente Descarga App
+*/
+.registro1 {
+    display: none;
+  }
+  
+  @media only screen and (max-width: 890px) {
+    .registro1 {
+      display: inline;
+    }
+    .registro2 {
+      display: none;
+    }
+  }
+  
