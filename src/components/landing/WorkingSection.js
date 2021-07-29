@@ -8,6 +8,7 @@ import LeadText from '@material-tailwind/react/LeadText';
 import Paragraph from '@material-tailwind/react/Paragraph';
 import StatusCard from 'components/landing/StatusCard';
 import Teamwork from 'assets/img/teamwork.jpeg';
+import { Link } from "react-router-dom";
 
 export default function WorkingSection() {
     return (
@@ -19,21 +20,24 @@ export default function WorkingSection() {
                         parts. A paragraph describing a feature will be enough.
                     </StatusCard>
                     <StatusCard
+                        to="/protocolos-covid"
                         color="lightBlue"
                         icon="autorenew"
-                        title="Free Revisions"
+                        title="Informacion Importante - Coronavirus"
                     >
                         Keep you user engaged by providing meaningful
                         information. Remember that by this time, the user is
                         curious.
                     </StatusCard>
+                    
                     <StatusCard
                         color="teal"
                         icon="fingerprint"
-                        title="Verified Company"
+                        title="Sos turista?"
                     >
-                        Write a few lines about each one. A paragraph describing
-                        a feature will be enough. Keep you user engaged!
+                       Keep you user engaged by providing meaningful
+                        information. Remember that by this time, the user is
+                        curious.
                     </StatusCard>
                 </div>
 

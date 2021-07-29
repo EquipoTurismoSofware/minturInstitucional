@@ -1,4 +1,5 @@
 import H2 from '@material-tailwind/react/Heading2';
+import H3 from "@material-tailwind/react/Heading3"
 import LeadText from '@material-tailwind/react/LeadText';
 
 export default function Header() {
@@ -8,7 +9,7 @@ export default function Header() {
             <div className="container max-w-8xl relative mx-auto">
                 <div className="items-center flex flex-wrap">
                     <div className="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
-                        <H2 color="white">Your story starts with us.</H2>
+                        <H3 color="white">Secretaria de Turismo San Luis - Institucional</H3>
                         <div className="text-gray-200">
                             <LeadText color="gray-200">
                                 This is a simple example of a Landing Page you

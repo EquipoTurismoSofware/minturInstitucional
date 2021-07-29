@@ -1,12 +1,9 @@
 import React, { useState, useEffect } from "react";
-import { Consumer } from "../context";
+import { Consumer } from "../../context";
 import { Link } from "react-router-dom";
 import axios from "axios";
 import SwiperCore, {Pagination} from 'swiper';
 import { Swiper, SwiperSlide} from 'swiper/react';
-
-import 'swiper/swiper.scss';
-import 'swiper/components/pagination/pagination.scss';
 
 // install Swiper modules
 SwiperCore.use([Pagination]);
@@ -81,7 +78,7 @@ const Novedades = (props) => {
               <Link
                 to={`/novedad/${item.id}`}
                 className="link"
-                style={{ color: "black" }}
+                style={{ color: "black", textDecoration:"none" }}
               >
                
                        <span className="blog-slider__code">{`${fecha[2]}/${fecha[1]}/${fecha[0]}`}</span>
@@ -106,7 +103,7 @@ const Novedades = (props) => {
 
     return (
       <div className="container mb-3 Novedades">
-          <Link to="/novedades" className="novedades-leyenda">
+          <Link to="/novedades" className="novedades-leyenda" style={{textDecoration:"none"}}>
             <span>NOVEDADES</span>
           </Link>
             

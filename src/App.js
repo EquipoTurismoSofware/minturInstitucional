@@ -18,6 +18,8 @@ import PListadoEstadisticas from "pages/Estadisticas/PListadoEstadisticas";
 import PContacto from "pages/Contacto/PContacto";
 import PRegistroGuiasTurismo from "pages/Registros/PRegistroGuiasTurismo"
 import PRegistroAgenciasDeViajes from "pages/Registros/PRegistroAgenciasDeViajes"
+import PCovid from "pages/Covid/PCovid";
+
 
 function App() {
     return (
@@ -36,6 +38,7 @@ function App() {
                         <Route exact path="/novedades" component={PNovedades} />
                         <Route exact path="/novedad/:id" component={PNovedad} />
                         <Route exact path="/login" component={Login} />
+                        <Route exact path="/protocolos-covid" component={PCovid} />
                         <Route exact path="/register" component={Register} />
                     </Switch>
                 </React.Fragment>

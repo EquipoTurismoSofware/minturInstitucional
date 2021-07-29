@@ -36,7 +36,7 @@ const PListadoEstadisticas = () => {
       }, []);
     
       const graph = data.map((element) => {
-        var color = "#be6a93"
+        var color = "rgb(168, 0, 219)"
         return(
             <div>
                  <div className="card" style={{borderColor:"#fff"}}>
@@ -62,21 +62,23 @@ const PListadoEstadisticas = () => {
     });
       return (
           <React.Fragment>
-            <div className="est-main" >
-            <div
-                className="ZonaDetalle-titulo"
-                style={{backgroundColor: `#722789` }}
-              >
-                <h3 style={{ color: `#722789` }}>
-                  LISTADO DE ESTADÍSTICAS
-                </h3>
+            <div className="container">
+              <div className="est-main" >
+                <div
+                  className="ZonaDetalle-titulo"
+                  style={{backgroundColor: `#722789` }}
+                >
+                  <h3 style={{ color: `#722789` }}>
+                    LISTADO DE ESTADÍSTICAS
+                  </h3>
+                </div>
               </div>
-            </div>
-            <div style={{margin:"0 20px 20px 20px"}}>
-              <div className="accordion" id="accordionAtractivos">
-                {graph}
+              <div style={{margin:"0 20px 20px 20px"}}>
+                <div className="accordion" id="accordionAtractivos">
+                  {graph}
+                </div>
               </div>
-            </div>
+            </div>   
           </React.Fragment>                    
 
       );
