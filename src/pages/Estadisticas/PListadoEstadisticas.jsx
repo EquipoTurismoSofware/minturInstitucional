@@ -2,7 +2,7 @@ import React, { useEffect, useState} from "react";
 import { Consumer } from "../../context";
 import axios from "axios";
 import Estadistica from "../../components/stats/Estadistica";
-
+//.
 const PListadoEstadisticas = () => {
     const [data, setData] = useState([]);
     const [flag, setFlag] = useState(false);
