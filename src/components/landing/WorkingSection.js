@@ -29,13 +29,13 @@ export default function WorkingSection() {
                         information. Remember that by this time, the user is
                         curious.
                     </StatusCard>
-                    
                     <StatusCard
                         color="teal"
                         icon="fingerprint"
                         title="Sos turista?"
+                        href="http://turismo.sanluis.gov.ar/#/"
                     >
-                       Keep you user engaged by providing meaningful
+                        Keep you user engaged by providing meaningful
                         information. Remember that by this time, the user is
                         curious.
                     </StatusCard>

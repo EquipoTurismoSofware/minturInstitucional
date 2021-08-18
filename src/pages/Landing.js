@@ -10,13 +10,11 @@ import React from 'react';
 export default function Landing() {
     return (
         <React.Fragment>
-            
+
             <main>
                 <Header />
                 <WorkingSection />
                 <Novedades time="10000" />
-                <TeamSection />
-                <ContactSection />
             </main>
             <DefaultFooter />
         </ React.Fragment>

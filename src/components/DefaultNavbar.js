@@ -30,37 +30,46 @@ export default function DefaultNavbar() {
                 <NavbarCollapse open={openNavbar}>
                     <Nav>
                         <div className="flex flex-col z-50 lg:flex-row lg:items-center">
-                            <NavLink
-                                href={`${process.env.REACT_APP_URL}/`}
-                                rel="noreferrer"
-                                ripple="light"
-                            >
-                                <Icon name="house" size="2xl" />
-                            </NavLink>
-                            <NavLink
-                                href={`${process.env.REACT_APP_URL}/estadisticas`}
-                                rel="noreferrer"
-                                ripple="light"
-                            >
-                                <Icon name="query_stats" size="2xl" />
-                                &nbsp;Estadisticas
-                            </NavLink>
-                            <NavLink
-                                href={`${process.env.REACT_APP_URL}/contacto`}
-                                rel="noreferrer"
-                                ripple="light"
-                            >
-                                <Icon name="people" size="2xl" />
-                                &nbsp;Contacto
-                            </NavLink>
-                            <NavLink
-                                href={`${process.env.REACT_APP_URL}/novedades`}
-                                rel="noreferrer"
-                                ripple="light"
-                            >
-                                <Icon name="article" size="2xl" />
-                                &nbsp;Novedades
-                            </NavLink>
+                            <Link to="/">
+                                <NavLink
+                                    //href={`${process.env.REACT_APP_URL}/`}
+                                    rel="noreferrer"
+                                    ripple="light"
+                                >
+                                    <Icon name="house" size="2xl" />
+                                </NavLink>
+                            </Link>
+                            <Link to="/estadisticas">
+                                <NavLink
+                                    //href={`${process.env.REACT_APP_URL}/estadisticas`}
+                                    rel="noreferrer"
+                                    ripple="light"
+                                >
+                                    <Icon name="query_stats" size="2xl" />
+                                    &nbsp;Estadisticas
+                                </NavLink>
+                            </Link>
+                            <Link to="/contacto">
+                                <NavLink
+                                    //href={`${process.env.REACT_APP_URL}/contacto`}
+                                    rel="noreferrer"
+                                    ripple="light"
+                                >
+                                    <Icon name="people" size="2xl" />
+                                    &nbsp;Contacto
+                                </NavLink>
+                            </Link>
+                            <Link to="/novedades">
+                                <NavLink
+                                    //href={`${process.env.REACT_APP_URL}/novedades`}
+                                    rel="noreferrer"
+                                    ripple="light"
+                                >
+                                    <Icon name="article" size="2xl" />
+                                    &nbsp;Novedades
+                                </NavLink>
+                            </Link>
+                            
                             <div className="text-white">
                                 <Dropdown
                                     color="transparent"
